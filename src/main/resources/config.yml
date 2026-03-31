@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────
+#  TrialTimer Configuration
+#  Plugin by EldorionMC | https://eldorionmc.de
+# ─────────────────────────────────────────────────────────
+
+# How long the Trial Spawner cooldown should last.
+# Vanilla default: 30 minutes
+# Supports decimals: e.g. 0.5 = 30 seconds
+#
+# Quick reference (minutes → ticks):
+#   0.5  min =    600 ticks  (30 seconds)
+#   1    min =  1,200 ticks
+#   5    min =  6,000 ticks
+#   10   min = 12,000 ticks
+#   30   min = 36,000 ticks  (vanilla)
+cooldown-minutes: 5.0
+
+# Language for plugin messages.
+# Available: en, de
+language: en
+
+# Broadcast a message to nearby players when a Trial Spawner
+# finishes its cooldown and is ready to be fought again.
+broadcast:
+  enabled: true
+  # Radius in blocks — only players within this range receive the message.
+  radius: 64
+
+# Debug mode — logs every cooldown modification to the console.
+debug: false

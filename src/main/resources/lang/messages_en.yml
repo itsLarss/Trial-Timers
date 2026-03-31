@@ -1,0 +1,22 @@
+# TrialTimer – English Messages
+
+plugin:
+  enabled:  "&aTrialTimer v{version} enabled. Cooldown set to &e{minutes} &amin."
+  disabled: "&cTrialTimer disabled."
+
+command:
+  no-permission: "&cYou don't have permission to do that."
+  reload-success: "&aConfig reloaded successfully!"
+  info: |-
+    &6&lTrialTimer &7– Current Settings
+    &7  Cooldown: &e{minutes} min &7(&e{seconds}s &7/ &e{ticks} ticks&7)
+  help: |-
+    &6&lTrialTimer &7– Commands
+    &e  /{label} reload &7– Reload config
+    &e  /{label} info   &7– Show current cooldown
+    &e  /{label} help   &7– Show this help
+
+# Sent to players near a Trial Spawner when its cooldown ends.
+# {x}, {y}, {z} = spawner coordinates
+broadcast:
+  ready: "&6[TrialTimer] &eA Trial Spawner at &6{x}&e, &6{y}&e, &6{z} &eis ready to fight again!"

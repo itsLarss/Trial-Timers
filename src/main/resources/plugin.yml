@@ -1,0 +1,24 @@
+name: TrialTimer
+version: '${project.version}'
+main: net.eldorion.trialtimer.TrialTimerPlugin
+api-version: '1.21'
+description: Configurable Trial Spawner cooldown for Paper/Purpur 1.21+
+authors: [ EldorionMC ]
+website: https://eldorionmc.de
+
+softdepend: [ PlaceholderAPI ]
+
+commands:
+  trialtimer:
+    description: TrialTimer main command
+    usage: /trialtimer <reload|info|help>
+    aliases: [ tt ]
+    permission: trialtimer.use
+
+permissions:
+  trialtimer.use:
+    description: Access to /trialtimer info and help
+    default: op
+  trialtimer.reload:
+    description: Reload the TrialTimer config
+    default: op

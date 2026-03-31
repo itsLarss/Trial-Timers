@@ -1,0 +1,22 @@
+# TrialTimer – Deutsche Nachrichten
+
+plugin:
+  enabled:  "&aTrialTimer v{version} aktiviert. Cooldown auf &e{minutes} &aMin. gesetzt."
+  disabled: "&cTrialTimer deaktiviert."
+
+command:
+  no-permission: "&cDazu hast du keine Berechtigung."
+  reload-success: "&aConfig erfolgreich neu geladen!"
+  info: |-
+    &6&lTrialTimer &7– Aktuelle Einstellungen
+    &7  Cooldown: &e{minutes} Min. &7(&e{seconds}s &7/ &e{ticks} Ticks&7)
+  help: |-
+    &6&lTrialTimer &7– Befehle
+    &e  /{label} reload &7– Config neu laden
+    &e  /{label} info   &7– Aktuellen Cooldown anzeigen
+    &e  /{label} help   &7– Diese Hilfe anzeigen
+
+# Wird an Spieler in der Nähe gesendet wenn ein Trial Spawner seinen Cooldown beendet.
+# {x}, {y}, {z} = Spawner-Koordinaten
+broadcast:
+  ready: "&6[TrialTimer] &eEin Trial Spawner bei &6{x}&e, &6{y}&e, &6{z} &eist wieder bereit!"
